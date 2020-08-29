@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Chat Box</title>
+</head>
+
+<body>
+    <h1 class="text-center display-4 pb-4 pt-2">Chat Box</h1>
+    <div class="container p-0" style="border: 1px solid rgba(0,0,0,0.3);max-width: 45rem;">
+        <div class="row m-0">
+            <div class="col text-center text-white bg-primary p-0 py-2">
+                <span class="material-icons" style="font-size: 2rem;line-height: 0;vertical-align: middle;">textsms</span>
+                <span style="vertical-align: middle;line-height: 0;">Group Chat</span>
+            </div>
+        </div>
+        <div class="row" style="height:30rem; overflow-y:auto;margin:auto;">
+            <div id="message-window" class="col pt-3">
+            </div>
+        </div>
+        <div class="form-row align-items-center p-0 m-0" style="border: solid rgba(0,0,0,0.3); border-width: 1px 0 0 0;">
+            <div class="col-11 p-0 m-0">
+                <div class="form-row align-items-center p-0 m-0">
+                    <div class="col">
+                        <label class="sr-only" for="inlineFormInput">Name</label>
+                        <input type="text" class="text-secondary form-control my-2" id="username-input"
+                            placeholder="User Name">
+                    </div>
+                    <div class="col">
+                        <label class="sr-only" for="inlineFormInput">Name</label>
+                        <input type="text" class="text-secondary form-control my-2" id="message-input"
+                            placeholder="Message...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 p-0 m-0">
+                <button type="submit" style="font-size: 3rem;line-height: 0;" class="p-0 btn text-secondary bg-white mb-2 material-icons"
+                    onclick="send(); return false;">send</button>
+            </div>
+        </div>
+
+        <div class="row p-2">
+            <div class="col">
+                <button id="clear-button" type="button" class="btn btn-outline-warning btn-block">Clear Local
+                    Stograge</button>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>
